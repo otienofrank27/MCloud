@@ -34,9 +34,13 @@ interface PublicSiteProps {
   onEnterConsole: (preselectPlanId?: number) => void;
 }
 
-const IMAGE_HERO = '/src/assets/images/hero_cloud_datacenter_1794698293276.jpg';
-const IMAGE_NODE = '/src/assets/images/infrastructure_server_node_1794698293123.jpg';
-const IMAGE_VAULT = '/src/assets/images/security_network_vault_1794698292952.jpg';
+import heroImage from '../assets/images/hero_cloud_datacenter_1794698293276.jpg';
+import nodeImage from '../assets/images/infrastructure_server_node_1794698293123.jpg';
+import vaultImage from '../assets/images/security_network_vault_1794698292952.jpg';
+
+const IMAGE_HERO = heroImage;
+const IMAGE_NODE = nodeImage;
+const IMAGE_VAULT = vaultImage;
 
 const ResilientImage: React.FC<{
   src: string;
